@@ -763,6 +763,16 @@
     <Compile Include="UserControls\WaitingProgressBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="WiFiDiscovery\DiscoveryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WiFiDiscovery\DiscoveryForm.Designer.cs">
+      <DependentUpon>DiscoveryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WiFiDiscovery\IPAddressHelper.cs" />
+    <EmbeddedResource Include="WiFiDiscovery\DiscoveryForm.resx">
+      <DependentUpon>DiscoveryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Resources\flag_greece.png" />
     <Content Include="Sound\connect.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -909,6 +919,9 @@
     <EmbeddedResource Include="CustomButtonForm.zh-TW.resx">
       <DependentUpon>CustomButtonForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ExceptionManager.cs-CZ.resx">
+      <DependentUpon>ExceptionManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExceptionManager.de.resx">
       <DependentUpon>ExceptionManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -1052,6 +1065,9 @@
     <EmbeddedResource Include="IssueDetectorForm.zh-TW.resx">
       <DependentUpon>IssueDetectorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LicenseForm.de.resx">
+      <DependentUpon>LicenseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LicenseForm.el-GR.resx">
       <DependentUpon>LicenseForm.cs</DependentUpon>
       <Generator>ResXFileCodeGeneratorEx</Generator>
@@ -1109,6 +1125,12 @@
     <EmbeddedResource Include="PreviewForm.zh-TW.resx">
       <DependentUpon>PreviewForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PSHelper\PSEditorForm.cs-CZ.resx">
+      <DependentUpon>PSEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSHelper\PSEditorForm.de.resx">
+      <DependentUpon>PSEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PSHelper\PSEditorForm.es.resx">
       <DependentUpon>PSEditorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -1127,6 +1149,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PSHelper\PSEditorForm.zh-TW.resx">
       <DependentUpon>PSEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSHelper\PSHelperForm.cs-CZ.resx">
+      <DependentUpon>PSHelperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSHelper\PSHelperForm.de.resx">
+      <DependentUpon>PSHelperForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PSHelper\PSHelperForm.es.resx">
       <DependentUpon>PSHelperForm.cs</DependentUpon>
@@ -1369,6 +1397,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RunFromPositionForm.zh-TW.resx">
       <DependentUpon>RunFromPositionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveOptionForm.cs-CZ.resx">
+      <DependentUpon>SaveOptionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SaveOptionForm.de.resx">
       <DependentUpon>SaveOptionForm.cs</DependentUpon>
