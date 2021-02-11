@@ -939,6 +939,10 @@ namespace LaserGRBL
 
 				mTP.Reset();
 
+				mQueuePtr.Enqueue(new GrblCommand("$661=" + file.Count));
+
+				Logger.LogMessage("MrJavaciLog ", "Grbl Sended Total File Count-> " + file.Count);
+
 				if (homing)
 				{
 					Logger.LogMessage("EnqueueProgram", "Push Homing ($H)");
