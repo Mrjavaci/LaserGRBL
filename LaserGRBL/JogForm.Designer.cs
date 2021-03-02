@@ -41,8 +41,8 @@
             this.BtnSW = new LaserGRBL.DirectionButton();
             this.BtnSE = new LaserGRBL.DirectionButton();
             this.TlpSpeedControl = new System.Windows.Forms.TableLayoutPanel();
-            this.TbSpeed = new System.Windows.Forms.TrackBar();
             this.LblSpeed = new System.Windows.Forms.Label();
+            this.TbSpeed = new System.Windows.Forms.TrackBar();
             this.TlpStepControl = new System.Windows.Forms.TableLayoutPanel();
             this.TbStep = new LaserGRBL.StepBar();
             this.LblStep = new System.Windows.Forms.Label();
@@ -104,6 +104,7 @@
             this.BtnHome.AltImage = null;
             this.BtnHome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnHome.Caption = null;
             this.BtnHome.Coloration = System.Drawing.Color.Empty;
             this.BtnHome.Image = ((System.Drawing.Image)(resources.GetObject("BtnHome.Image")));
             this.BtnHome.JogDirection = LaserGRBL.GrblCore.JogDirection.Home;
@@ -123,6 +124,7 @@
             this.BtnW.AltImage = null;
             this.BtnW.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnW.Caption = null;
             this.BtnW.Coloration = System.Drawing.Color.Empty;
             this.BtnW.Image = ((System.Drawing.Image)(resources.GetObject("BtnW.Image")));
             this.BtnW.JogDirection = LaserGRBL.GrblCore.JogDirection.W;
@@ -142,6 +144,7 @@
             this.BtnN.AltImage = null;
             this.BtnN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnN.Caption = null;
             this.BtnN.Coloration = System.Drawing.Color.Empty;
             this.BtnN.Image = ((System.Drawing.Image)(resources.GetObject("BtnN.Image")));
             this.BtnN.JogDirection = LaserGRBL.GrblCore.JogDirection.N;
@@ -161,6 +164,7 @@
             this.BtnE.AltImage = null;
             this.BtnE.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnE.Caption = null;
             this.BtnE.Coloration = System.Drawing.Color.Empty;
             this.BtnE.Image = ((System.Drawing.Image)(resources.GetObject("BtnE.Image")));
             this.BtnE.JogDirection = LaserGRBL.GrblCore.JogDirection.E;
@@ -180,6 +184,7 @@
             this.BtnNW.AltImage = null;
             this.BtnNW.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnNW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnNW.Caption = null;
             this.BtnNW.Coloration = System.Drawing.Color.Empty;
             this.BtnNW.Image = ((System.Drawing.Image)(resources.GetObject("BtnNW.Image")));
             this.BtnNW.JogDirection = LaserGRBL.GrblCore.JogDirection.NW;
@@ -199,6 +204,7 @@
             this.BtnNE.AltImage = null;
             this.BtnNE.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnNE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnNE.Caption = null;
             this.BtnNE.Coloration = System.Drawing.Color.Empty;
             this.BtnNE.Image = ((System.Drawing.Image)(resources.GetObject("BtnNE.Image")));
             this.BtnNE.JogDirection = LaserGRBL.GrblCore.JogDirection.NE;
@@ -218,6 +224,7 @@
             this.BtnS.AltImage = null;
             this.BtnS.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnS.Caption = null;
             this.BtnS.Coloration = System.Drawing.Color.Empty;
             this.BtnS.Image = ((System.Drawing.Image)(resources.GetObject("BtnS.Image")));
             this.BtnS.JogDirection = LaserGRBL.GrblCore.JogDirection.S;
@@ -237,6 +244,7 @@
             this.BtnSW.AltImage = null;
             this.BtnSW.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnSW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnSW.Caption = null;
             this.BtnSW.Coloration = System.Drawing.Color.Empty;
             this.BtnSW.Image = ((System.Drawing.Image)(resources.GetObject("BtnSW.Image")));
             this.BtnSW.JogDirection = LaserGRBL.GrblCore.JogDirection.SW;
@@ -256,6 +264,7 @@
             this.BtnSE.AltImage = null;
             this.BtnSE.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnSE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnSE.Caption = null;
             this.BtnSE.Coloration = System.Drawing.Color.Empty;
             this.BtnSE.Image = ((System.Drawing.Image)(resources.GetObject("BtnSE.Image")));
             this.BtnSE.JogDirection = LaserGRBL.GrblCore.JogDirection.SE;
@@ -276,8 +285,8 @@
             this.TlpSpeedControl.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.TlpSpeedControl.ColumnCount = 1;
             this.TlpSpeedControl.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.TlpSpeedControl.Controls.Add(this.TbSpeed, 0, 0);
             this.TlpSpeedControl.Controls.Add(this.LblSpeed, 0, 1);
+            this.TlpSpeedControl.Controls.Add(this.TbSpeed, 0, 0);
             this.TlpSpeedControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TlpSpeedControl.Location = new System.Drawing.Point(11, 3);
             this.TlpSpeedControl.Margin = new System.Windows.Forms.Padding(0);
@@ -289,9 +298,18 @@
             this.TlpSpeedControl.Size = new System.Drawing.Size(51, 119);
             this.TlpSpeedControl.TabIndex = 18;
             // 
+            // LblSpeed
+            // 
+            this.LblSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LblSpeed.AutoSize = true;
+            this.LblSpeed.Location = new System.Drawing.Point(7, 106);
+            this.LblSpeed.Name = "LblSpeed";
+            this.LblSpeed.Size = new System.Drawing.Size(37, 13);
+            this.LblSpeed.TabIndex = 17;
+            this.LblSpeed.Text = "F1000";
+            // 
             // TbSpeed
             // 
-            this.TbSpeed.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TbSpeed.LargeChange = 100;
             this.TbSpeed.Location = new System.Drawing.Point(3, 3);
             this.TbSpeed.Maximum = 4000;
@@ -306,16 +324,6 @@
             this.TbSpeed.Value = 1000;
             this.TbSpeed.ValueChanged += new System.EventHandler(this.TbSpeed_ValueChanged);
             this.TbSpeed.MouseUp += new System.Windows.Forms.MouseEventHandler(this.OnSliderMouseUP);
-            // 
-            // LblSpeed
-            // 
-            this.LblSpeed.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.LblSpeed.AutoSize = true;
-            this.LblSpeed.Location = new System.Drawing.Point(7, 106);
-            this.LblSpeed.Name = "LblSpeed";
-            this.LblSpeed.Size = new System.Drawing.Size(37, 13);
-            this.LblSpeed.TabIndex = 17;
-            this.LblSpeed.Text = "F1000";
             // 
             // TlpStepControl
             // 
@@ -399,6 +407,7 @@
             this.BtnZup01.AltImage = null;
             this.BtnZup01.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnZup01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnZup01.Caption = null;
             this.BtnZup01.Coloration = System.Drawing.Color.Empty;
             this.BtnZup01.Image = ((System.Drawing.Image)(resources.GetObject("BtnZup01.Image")));
             this.BtnZup01.JogDirection = LaserGRBL.GrblCore.JogDirection.Zup;
@@ -425,6 +434,7 @@
             this.BtnZup1.AltImage = null;
             this.BtnZup1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnZup1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnZup1.Caption = null;
             this.BtnZup1.Coloration = System.Drawing.Color.Empty;
             this.BtnZup1.Image = ((System.Drawing.Image)(resources.GetObject("BtnZup1.Image")));
             this.BtnZup1.JogDirection = LaserGRBL.GrblCore.JogDirection.Zup;
@@ -451,6 +461,7 @@
             this.BtnZup10.AltImage = null;
             this.BtnZup10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnZup10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnZup10.Caption = null;
             this.BtnZup10.Coloration = System.Drawing.Color.Empty;
             this.BtnZup10.Image = ((System.Drawing.Image)(resources.GetObject("BtnZup10.Image")));
             this.BtnZup10.JogDirection = LaserGRBL.GrblCore.JogDirection.Zup;
@@ -477,6 +488,7 @@
             this.BtnZdown10.AltImage = null;
             this.BtnZdown10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnZdown10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnZdown10.Caption = null;
             this.BtnZdown10.Coloration = System.Drawing.Color.Empty;
             this.BtnZdown10.Image = ((System.Drawing.Image)(resources.GetObject("BtnZdown10.Image")));
             this.BtnZdown10.JogDirection = LaserGRBL.GrblCore.JogDirection.Zdown;
@@ -503,6 +515,7 @@
             this.BtnZdown1.AltImage = null;
             this.BtnZdown1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnZdown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnZdown1.Caption = null;
             this.BtnZdown1.Coloration = System.Drawing.Color.Empty;
             this.BtnZdown1.Image = ((System.Drawing.Image)(resources.GetObject("BtnZdown1.Image")));
             this.BtnZdown1.JogDirection = LaserGRBL.GrblCore.JogDirection.Zdown;
@@ -529,6 +542,7 @@
             this.BtnZdown01.AltImage = null;
             this.BtnZdown01.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnZdown01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnZdown01.Caption = null;
             this.BtnZdown01.Coloration = System.Drawing.Color.Empty;
             this.BtnZdown01.Image = ((System.Drawing.Image)(resources.GetObject("BtnZdown01.Image")));
             this.BtnZdown01.JogDirection = LaserGRBL.GrblCore.JogDirection.Zdown;

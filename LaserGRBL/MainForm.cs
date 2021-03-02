@@ -24,7 +24,7 @@ namespace LaserGRBL
 			MMn.Renderer = new MMnRenderer();
 
 			splitContainer1.FixedPanel = FixedPanel.Panel1;
-			splitContainer1.SplitterDistance = Settings.GetObject("MainForm Splitter Position", 260);
+			//splitContainer1.SplitterDistance = Settings.GetObject("MainForm Splitter Position", 260);
 			MnNotifyNewVersion.Checked = Settings.GetObject("Auto Update", true);
 			MnNotifyMinorVersion.Checked = Settings.GetObject("Auto Update Build", false);
 			MnNotifyPreRelease.Checked = Settings.GetObject("Auto Update Pre", false);
@@ -894,10 +894,15 @@ namespace LaserGRBL
 		{
 			SetLanguage(new System.Globalization.CultureInfo("tr-TR"));
 		}
-	}
+
+        private void PreviewForm_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 
 
-	public class MMnRenderer : ToolStripProfessionalRenderer
+    public class MMnRenderer : ToolStripProfessionalRenderer
 	{
 		public MMnRenderer() : base(new CustomMenuColor()) { }
 

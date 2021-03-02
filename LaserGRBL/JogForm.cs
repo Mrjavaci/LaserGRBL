@@ -5,6 +5,7 @@
 // You should have received a copy of the GPLv3 General Public License  along with this program; if not, write to the Free Software  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307,  USA. using System;
 
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace LaserGRBL
@@ -16,9 +17,19 @@ namespace LaserGRBL
 		public JogForm()
 		{
 			InitializeComponent();
+
+            InitializeUiForRoxis();
+
             SettingsForm.SettingsChanged += SettingsForm_SettingsChanged;
 		}
 
+
+        private void InitializeUiForRoxis()
+        {
+            TbSpeed.ForeColor = Color.White;
+
+
+        }
         public void SetCore(GrblCore core)
 		{
 			Core = core;
@@ -118,7 +129,23 @@ namespace LaserGRBL
 
 	}
 
-    public class StepBar : System.Windows.Forms.TrackBar
+
+	public class RoxisTrackBar : System.Windows.Forms.TrackBar
+	{
+		protected override void OnPaint(PaintEventArgs e)
+		{
+			// x1 = barRect.X
+// y1 = barRect.Y + barRect.Height / 2
+// x2 = barRect.X + elapsedRect.Width
+// y2 = y1
+//			e.Graphics.DrawLine(new Pen(Color.Aqua, 1f), RoxisTrackBar., y1, x2, y2);
+
+			// e.Graphics.FillRectangle([Color.Aqua],ClientRectangle)};
+			//base.OnPaint(e);
+		}
+	}
+
+	public class StepBar : System.Windows.Forms.TrackBar
     {
         decimal[] values = { 0.1M, 0.2M, 0.5M, 1, 2, 5, 10, 20, 50, 100, 200 };
 

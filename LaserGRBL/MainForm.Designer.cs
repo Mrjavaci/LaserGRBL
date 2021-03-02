@@ -23,17 +23,17 @@
 		#region Codice generato da Progettazione Windows Form
 
 		/// <summary>
-		/// Metodo necessario per il supporto della finestra di progettazione. Non modificare
-		/// il contenuto del metodo con l'editor di codice.
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.PreviewForm = new LaserGRBL.PreviewForm();
             this.ConnectionForm = new LaserGRBL.ConnectLogForm();
             this.JogForm = new LaserGRBL.JogForm();
-            this.PreviewForm = new LaserGRBL.PreviewForm();
             this.StatusBar = new System.Windows.Forms.StatusStrip();
             this.TTLLines = new System.Windows.Forms.ToolStripStatusLabel();
             this.TTTLines = new System.Windows.Forms.ToolStripStatusLabel();
@@ -144,19 +144,25 @@
             // 
             // splitContainer1
             // 
-            this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.splitContainer1, "splitContainer1");
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.ConnectionForm);
-            this.splitContainer1.Panel1.Controls.Add(this.JogForm);
+            this.splitContainer1.Panel1.Controls.Add(this.PreviewForm);
+            resources.ApplyResources(this.splitContainer1.Panel1, "splitContainer1.Panel1");
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.PreviewForm);
+            this.splitContainer1.Panel2.Controls.Add(this.ConnectionForm);
+            this.splitContainer1.Panel2.Controls.Add(this.JogForm);
             this.splitContainer1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer1_SplitterMoved);
+            // 
+            // PreviewForm
+            // 
+            resources.ApplyResources(this.PreviewForm, "PreviewForm");
+            this.PreviewForm.Name = "PreviewForm";
+            this.PreviewForm.Load += new System.EventHandler(this.PreviewForm_Load);
             // 
             // ConnectionForm
             // 
@@ -167,11 +173,6 @@
             // 
             resources.ApplyResources(this.JogForm, "JogForm");
             this.JogForm.Name = "JogForm";
-            // 
-            // PreviewForm
-            // 
-            resources.ApplyResources(this.PreviewForm, "PreviewForm");
-            this.PreviewForm.Name = "PreviewForm";
             // 
             // StatusBar
             // 
@@ -931,10 +932,6 @@
 		private System.Windows.Forms.ToolStripMenuItem helpOnLineToolStripMenuItem;
 		private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
 		private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-		private System.Windows.Forms.SplitContainer splitContainer1;
-		private PreviewForm PreviewForm;
-		private JogForm JogForm;
-		private ConnectLogForm ConnectionForm;
 		private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
 		private System.Windows.Forms.ToolStripSeparator toolStripMenuItem6;
 		private System.Windows.Forms.ToolStripMenuItem openSessionLogToolStripMenuItem;
@@ -1000,6 +997,10 @@
 		private System.Windows.Forms.ToolStripMenuItem MnWiFiDiscovery;
         private System.Windows.Forms.ToolStripMenuItem greekToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem turkishToolStripMenuItem;
-	}
+        private PreviewForm PreviewForm;
+        private JogForm JogForm;
+        private ConnectLogForm ConnectionForm;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+    }
 }
 

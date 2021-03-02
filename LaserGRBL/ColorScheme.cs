@@ -38,7 +38,7 @@ namespace LaserGRBL
 				FromHex("#1F1F1F"),		//form backcolor
 				FromHex("#ffffff"),	//form forecolor
 
-				Color.LightYellow,			//preview background
+				FromHex("#747474"),			//preview background
 				Color.Black,				//preview text
 				Color.Empty,				//preview grid?
 				Color.LightGray,			//preview reference line
