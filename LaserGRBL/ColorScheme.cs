@@ -18,14 +18,25 @@ namespace LaserGRBL
 		{ BlueLaser, RedLaser, Dark, Hacker, Nighty }
 
 		public static Dictionary<Scheme, Color[]> mData;
+		private static Color FromHex(string hex)
+		{
+			if (hex.StartsWith("#"))
+				hex = hex.Substring(1);
 
+			if (hex.Length != 6) throw new Exception("Color not valid");
+
+			return Color.FromArgb(
+				int.Parse(hex.Substring(0, 2), System.Globalization.NumberStyles.HexNumber),
+				int.Parse(hex.Substring(2, 2), System.Globalization.NumberStyles.HexNumber),
+				int.Parse(hex.Substring(4, 2), System.Globalization.NumberStyles.HexNumber));
+		}
 		static ColorScheme()
 		{
 			mData = new Dictionary<Scheme, Color[]>();
 			mData.Add(Scheme.BlueLaser, new Color[] 
 			{
-				SystemColors.Control,		//form backcolor
-				SystemColors.ControlText,	//form forecolor
+				FromHex("#1F1F1F"),		//form backcolor
+				FromHex("#ffffff"),	//form forecolor
 
 				Color.LightYellow,			//preview background
 				Color.Black,				//preview text
@@ -52,6 +63,8 @@ namespace LaserGRBL
 				Color.DodgerBlue,			//link color
 				Color.Purple,				//visited link color
 			});
+			
+			
 			mData.Add(Scheme.RedLaser, new Color[] 
 			{
 				SystemColors.Control,		//form backcolor

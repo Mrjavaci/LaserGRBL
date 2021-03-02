@@ -40,9 +40,7 @@ namespace LaserGRBL
 
 			InitSpeedCB();
 			InitPortCB();
-
 			RestoreConf();
-
 			TimerUpdate();
 		}
 

@@ -33,7 +33,7 @@
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.LblVersion = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// timer1
@@ -45,10 +45,10 @@
 			// 
 			this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox1.Image")));
 			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(413, 227);
+			this.pictureBox1.Size = new System.Drawing.Size(299, 631);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
@@ -56,9 +56,9 @@
 			// 
 			// LblVersion
 			// 
-			this.LblVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.LblVersion.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
 			this.LblVersion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-			this.LblVersion.Location = new System.Drawing.Point(304, 210);
+			this.LblVersion.Location = new System.Drawing.Point(190, 614);
 			this.LblVersion.Name = "LblVersion";
 			this.LblVersion.Size = new System.Drawing.Size(108, 16);
 			this.LblVersion.TabIndex = 1;
@@ -71,7 +71,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.ClientSize = new System.Drawing.Size(413, 227);
+			this.ClientSize = new System.Drawing.Size(299, 631);
 			this.Controls.Add(this.LblVersion);
 			this.Controls.Add(this.pictureBox1);
 			this.DoubleBuffered = true;
@@ -81,9 +81,8 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.TopMost = true;
 			this.Load += new System.EventHandler(this.SplashScreenForm_Load);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
-
 		}
 
 		#endregion

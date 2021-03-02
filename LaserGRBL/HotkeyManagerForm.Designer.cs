@@ -41,7 +41,7 @@
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.GB.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
+			((System.ComponentModel.ISupportInitialize) (this.DGV)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tableLayoutPanel1
@@ -93,9 +93,7 @@
 			this.DGV.AllowUserToDeleteRows = false;
 			this.DGV.AllowUserToResizeRows = false;
 			this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Action,
-            this.Shortcut});
+			this.DGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {this.Action, this.Shortcut});
 			resources.ApplyResources(this.DGV, "DGV");
 			this.DGV.Name = "DGV";
 			this.DGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -127,9 +125,8 @@
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.tableLayoutPanel2.PerformLayout();
 			this.GB.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.DGV)).EndInit();
+			((System.ComponentModel.ISupportInitialize) (this.DGV)).EndInit();
 			this.ResumeLayout(false);
-
 		}
 
 		#endregion

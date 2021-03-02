@@ -517,7 +517,10 @@ namespace LaserGRBL
 			Refresh();
 		}
 
-		
-	}
+        private void Preview_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 
 }
