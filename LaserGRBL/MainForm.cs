@@ -19,7 +19,7 @@ namespace LaserGRBL
 		public MainForm()
 		{
 			InitializeComponent();
-			
+			  
 			MnOrtur.Visible = false;
 			MMn.Renderer = new MMnRenderer();
 
@@ -917,11 +917,17 @@ namespace LaserGRBL
 
         private void setSplitterPos()
         {
-	        int newPanel1Width = (this.Width - 290) ;  
-	        splitContainer1.SplitterDistance = newPanel1Width;
 
-	        saveSplitContainerSplitterPos();
-        }
+
+	        int newPanel1Width = (this.Width - 290) ;
+            if (newPanel1Width > 100)
+            {
+				splitContainer1.SplitterDistance = newPanel1Width;
+
+                saveSplitContainerSplitterPos();
+
+			}
+		}
 
         private void onSizeChanged(object sender, EventArgs e)
         {

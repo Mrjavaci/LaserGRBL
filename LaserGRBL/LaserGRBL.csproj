@@ -776,6 +776,15 @@
       <DependentUpon>DiscoveryForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Resources\flag_greece.png" />
+    <Content Include="Grafica\down.png" />
+    <Content Include="Grafica\down_left.png" />
+    <Content Include="Grafica\down_right.png" />
+    <Content Include="Grafica\left.png" />
+    <Content Include="Grafica\middle.png" />
+    <Content Include="Grafica\right.png" />
+    <Content Include="Grafica\up-left.png" />
+    <Content Include="Grafica\up-right.png" />
+    <Content Include="Grafica\up.png" />
     <Content Include="Sound\connect.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
