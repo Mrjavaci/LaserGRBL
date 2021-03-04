@@ -32,8 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.PreviewForm = new LaserGRBL.PreviewForm();
-            this.ConnectionForm = new LaserGRBL.ConnectLogForm();
             this.JogForm = new LaserGRBL.JogForm();
+            this.ConnectionForm = new LaserGRBL.ConnectLogForm();
             this.StatusBar = new System.Windows.Forms.StatusStrip();
             this.TTLLines = new System.Windows.Forms.ToolStripStatusLabel();
             this.TTTLines = new System.Windows.Forms.ToolStripStatusLabel();
@@ -145,6 +145,7 @@
             // splitContainer1
             // 
             resources.ApplyResources(this.splitContainer1, "splitContainer1");
+            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -154,8 +155,9 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.ConnectionForm);
             this.splitContainer1.Panel2.Controls.Add(this.JogForm);
+            this.splitContainer1.Panel2.Controls.Add(this.ConnectionForm);
+            resources.ApplyResources(this.splitContainer1.Panel2, "splitContainer1.Panel2");
             this.splitContainer1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer1_SplitterMoved);
             // 
             // PreviewForm
@@ -164,15 +166,16 @@
             this.PreviewForm.Name = "PreviewForm";
             this.PreviewForm.Load += new System.EventHandler(this.PreviewForm_Load);
             // 
-            // ConnectionForm
-            // 
-            resources.ApplyResources(this.ConnectionForm, "ConnectionForm");
-            this.ConnectionForm.Name = "ConnectionForm";
-            // 
             // JogForm
             // 
             resources.ApplyResources(this.JogForm, "JogForm");
             this.JogForm.Name = "JogForm";
+            this.JogForm.Load += new System.EventHandler(this.JogForm_Load);
+            // 
+            // ConnectionForm
+            // 
+            resources.ApplyResources(this.ConnectionForm, "ConnectionForm");
+            this.ConnectionForm.Name = "ConnectionForm";
             // 
             // StatusBar
             // 

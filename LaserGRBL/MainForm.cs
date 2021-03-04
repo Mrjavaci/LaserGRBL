@@ -460,7 +460,7 @@ namespace LaserGRBL
 		}
 
 		private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)
-		{
+        {
 			Settings.SetObject("MainForm Splitter Position", splitContainer1.SplitterDistance);
 			Settings.Save();
 		}
@@ -896,6 +896,11 @@ namespace LaserGRBL
 		}
 
         private void PreviewForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void JogForm_Load(object sender, EventArgs e)
         {
 
         }
