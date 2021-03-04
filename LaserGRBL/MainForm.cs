@@ -19,7 +19,7 @@ namespace LaserGRBL
 		public MainForm()
 		{
 			InitializeComponent();
-
+			
 			MnOrtur.Visible = false;
 			MMn.Renderer = new MMnRenderer();
 
@@ -461,8 +461,13 @@ namespace LaserGRBL
 
 		private void splitContainer1_SplitterMoved(object sender, SplitterEventArgs e)
         {
-			Settings.SetObject("MainForm Splitter Position", splitContainer1.SplitterDistance);
-			Settings.Save();
+		        saveSplitContainerSplitterPos();
+		}
+
+        private void saveSplitContainerSplitterPos()
+        {
+            Settings.SetObject("MainForm Splitter Position", splitContainer1.SplitterDistance);
+            Settings.Save();
 		}
 
 		private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -903,6 +908,24 @@ namespace LaserGRBL
         private void JogForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void onResizeEnd(object sender, EventArgs e)
+        {
+	  //      setSplitterPos();
+        }
+
+        private void setSplitterPos()
+        {
+	        int newPanel1Width = (this.Width - 290) ;  
+	        splitContainer1.SplitterDistance = newPanel1Width;
+
+	        saveSplitContainerSplitterPos();
+        }
+
+        private void onSizeChanged(object sender, EventArgs e)
+        {
+			setSplitterPos();
         }
     }
 
