@@ -135,7 +135,7 @@
     <value>0, 0</value>
   </data>
   <data name="PreviewForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>661, 532</value>
+    <value>661, 533</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PreviewForm.TabIndex" type="System.Int32, mscorlib">
@@ -168,14 +168,38 @@
   <data name="splitContainer1.Panel1MinSize" type="System.Int32, mscorlib">
     <value>210</value>
   </data>
-  <data name="JogForm.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
+  <data name="rxButtons1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="rxButtons1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 172</value>
+  </data>
+  <data name="rxButtons1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 237</value>
+  </data>
+  <data name="rxButtons1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;rxButtons1.Name" xml:space="preserve">
+    <value>rxButtons1</value>
+  </data>
+  <data name="&gt;&gt;rxButtons1.Type" xml:space="preserve">
+    <value>LaserGRBL.RxButtons, LaserGRBL, Version=4.2.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rxButtons1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;rxButtons1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="JogForm.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
   </data>
   <data name="JogForm.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="JogForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 404</value>
+    <value>1, 405</value>
   </data>
   <data name="JogForm.Size" type="System.Drawing.Size, System.Drawing">
     <value>218, 128</value>
@@ -193,10 +217,10 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;JogForm.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
-  <data name="ConnectionForm.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="ConnectionForm.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="ConnectionForm.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -208,7 +232,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="ConnectionForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 532</value>
+    <value>218, 165</value>
   </data>
   <data name="ConnectionForm.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -223,7 +247,7 @@
     <value>splitContainer1.Panel2</value>
   </data>
   <data name="&gt;&gt;ConnectionForm.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
@@ -238,7 +262,7 @@
     <value>1</value>
   </data>
   <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>883, 532</value>
+    <value>884, 533</value>
   </data>
   <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
     <value>661</value>
@@ -298,7 +322,7 @@
     <value>False</value>
   </data>
   <data name="TTLinkToNews.Size" type="System.Drawing.Size, System.Drawing">
-    <value>422, 19</value>
+    <value>423, 19</value>
   </data>
   <data name="TTOvS.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -358,13 +382,13 @@
     <value>Disconnected</value>
   </data>
   <data name="StatusBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 556</value>
+    <value>0, 557</value>
   </data>
   <data name="StatusBar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>1, 0, 19, 0</value>
   </data>
   <data name="StatusBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>883, 24</value>
+    <value>884, 24</value>
   </data>
   <data name="StatusBar.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1893,7 +1917,7 @@
     <value>0, 0</value>
   </data>
   <data name="MMn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>883, 24</value>
+    <value>884, 24</value>
   </data>
   <data name="MMn.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1926,7 +1950,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>883, 580</value>
+    <value>884, 581</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2006,6 +2030,9 @@
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>900, 620</value>
   </data>
   <data name="&gt;&gt;TTLLines.Name" xml:space="preserve">
     <value>TTLLines</value>

@@ -65,6 +65,8 @@ namespace LaserGRBL
 			Core.OnOverrideChange += RefreshOverride;
 			Core.IssueDetected += OnIssueDetected;
 
+
+			rxButtons1.setCore(Core);
 			PreviewForm.SetCore(Core);
 			ConnectionForm.SetCore(Core);
 			JogForm.SetCore(Core);
@@ -74,6 +76,7 @@ namespace LaserGRBL
 			ColorScheme.CurrentScheme = Settings.GetObject("Color Schema", ColorScheme.Scheme.BlueLaser); ;
 			RefreshColorSchema(); //include RefreshOverride();
 			RefreshFormTitle();
+		//	setSplitterPos();
 		}
 
 		public MainForm(string[] args) : this()
@@ -931,7 +934,19 @@ namespace LaserGRBL
 
         private void onSizeChanged(object sender, EventArgs e)
         {
-			setSplitterPos();
+		//	setSplitterPos();
+        }
+
+        private void onResized(object sender, EventArgs e)
+        {
+
+            setSplitterPos();
+
+        }
+
+        private void rxButtons1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

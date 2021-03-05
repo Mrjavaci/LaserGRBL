@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.PreviewForm = new LaserGRBL.PreviewForm();
+            this.rxButtons1 = new LaserGRBL.RxButtons();
             this.JogForm = new LaserGRBL.JogForm();
             this.ConnectionForm = new LaserGRBL.ConnectLogForm();
             this.StatusBar = new System.Windows.Forms.StatusStrip();
@@ -153,6 +154,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.rxButtons1);
             this.splitContainer1.Panel2.Controls.Add(this.JogForm);
             this.splitContainer1.Panel2.Controls.Add(this.ConnectionForm);
             this.splitContainer1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer1_SplitterMoved);
@@ -162,6 +164,13 @@
             resources.ApplyResources(this.PreviewForm, "PreviewForm");
             this.PreviewForm.Name = "PreviewForm";
             this.PreviewForm.Load += new System.EventHandler(this.PreviewForm_Load);
+            // 
+            // rxButtons1
+            // 
+            resources.ApplyResources(this.rxButtons1, "rxButtons1");
+            this.rxButtons1.BackColor = System.Drawing.Color.Transparent;
+            this.rxButtons1.Name = "rxButtons1";
+            this.rxButtons1.Load += new System.EventHandler(this.rxButtons1_Load);
             // 
             // JogForm
             // 
@@ -884,6 +893,7 @@
             this.SizeChanged += new System.EventHandler(this.onSizeChanged);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
+            this.Resize += new System.EventHandler(this.onResized);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -1003,6 +1013,7 @@
         private JogForm JogForm;
         private ConnectLogForm ConnectionForm;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        private RxButtons rxButtons1;
     }
 }
 

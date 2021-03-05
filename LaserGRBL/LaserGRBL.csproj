@@ -679,6 +679,12 @@
     <Compile Include="Tools\WinAPI.cs" />
     <Compile Include="Tools\WordWrap.cs" />
     <Compile Include="UsageStats.cs" />
+    <Compile Include="RxButtons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RxButtons.Designer.cs">
+      <DependentUpon>RxButtons.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ColorProgressBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -772,6 +778,9 @@
       <DependentUpon>DiscoveryForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WiFiDiscovery\IPAddressHelper.cs" />
+    <EmbeddedResource Include="RxButtons.resx">
+      <DependentUpon>RxButtons.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WiFiDiscovery\DiscoveryForm.resx">
       <DependentUpon>DiscoveryForm.cs</DependentUpon>
     </EmbeddedResource>
