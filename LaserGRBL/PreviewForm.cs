@@ -199,8 +199,10 @@ namespace LaserGRBL
 				return mDrawDisabled;
 			}
 
-			protected override void OnClick(EventArgs e)
-            {PerformClick(e);}
+            protected override void OnClick(EventArgs e)
+            {
+                PerformClick(e);
+            }
 
             private bool mEmulateMouseInside;
             public bool EmulateMouseInside
