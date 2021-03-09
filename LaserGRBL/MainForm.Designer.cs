@@ -31,10 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.PreviewForm = new LaserGRBL.PreviewForm();
-            this.rxButtons1 = new LaserGRBL.RxButtons();
-            this.JogForm = new LaserGRBL.JogForm();
-            this.ConnectionForm = new LaserGRBL.ConnectLogForm();
             this.StatusBar = new System.Windows.Forms.StatusStrip();
             this.TTLLines = new System.Windows.Forms.ToolStripStatusLabel();
             this.TTTLines = new System.Windows.Forms.ToolStripStatusLabel();
@@ -135,6 +131,11 @@
             this.licenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AwakeTimer = new System.Windows.Forms.Timer(this.components);
             this.MultipleInstanceTimer = new System.Windows.Forms.Timer(this.components);
+            this.rxMenuBar1 = new LaserGRBL.RxMenuBar();
+            this.PreviewForm = new LaserGRBL.PreviewForm();
+            this.rxButtons1 = new LaserGRBL.RxButtons();
+            this.JogForm = new LaserGRBL.JogForm();
+            this.ConnectionForm = new LaserGRBL.ConnectLogForm();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -158,30 +159,6 @@
             this.splitContainer1.Panel2.Controls.Add(this.JogForm);
             this.splitContainer1.Panel2.Controls.Add(this.ConnectionForm);
             this.splitContainer1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer1_SplitterMoved);
-            // 
-            // PreviewForm
-            // 
-            resources.ApplyResources(this.PreviewForm, "PreviewForm");
-            this.PreviewForm.Name = "PreviewForm";
-            this.PreviewForm.Load += new System.EventHandler(this.PreviewForm_Load);
-            // 
-            // rxButtons1
-            // 
-            resources.ApplyResources(this.rxButtons1, "rxButtons1");
-            this.rxButtons1.BackColor = System.Drawing.Color.Transparent;
-            this.rxButtons1.Name = "rxButtons1";
-            this.rxButtons1.Load += new System.EventHandler(this.rxButtons1_Load);
-            // 
-            // JogForm
-            // 
-            resources.ApplyResources(this.JogForm, "JogForm");
-            this.JogForm.Name = "JogForm";
-            this.JogForm.Load += new System.EventHandler(this.JogForm_Load);
-            // 
-            // ConnectionForm
-            // 
-            resources.ApplyResources(this.ConnectionForm, "ConnectionForm");
-            this.ConnectionForm.Name = "ConnectionForm";
             // 
             // StatusBar
             // 
@@ -294,6 +271,7 @@
             // 
             // MMn
             // 
+            resources.ApplyResources(this.MMn, "MMn");
             this.MMn.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MnGrbl,
             this.fileToolStripMenuItem,
@@ -303,7 +281,6 @@
             this.toolsToolStripMenuItem,
             this.MnOrtur,
             this.questionMarkToolStripMenuItem});
-            resources.ApplyResources(this.MMn, "MMn");
             this.MMn.Name = "MMn";
             // 
             // MnGrbl
@@ -876,11 +853,41 @@
             this.MultipleInstanceTimer.Interval = 1000;
             this.MultipleInstanceTimer.Tick += new System.EventHandler(this.MultipleInstanceTimer_Tick);
             // 
+            // rxMenuBar1
+            // 
+            resources.ApplyResources(this.rxMenuBar1, "rxMenuBar1");
+            this.rxMenuBar1.Name = "rxMenuBar1";
+            // 
+            // PreviewForm
+            // 
+            resources.ApplyResources(this.PreviewForm, "PreviewForm");
+            this.PreviewForm.Name = "PreviewForm";
+            this.PreviewForm.Load += new System.EventHandler(this.PreviewForm_Load);
+            // 
+            // rxButtons1
+            // 
+            resources.ApplyResources(this.rxButtons1, "rxButtons1");
+            this.rxButtons1.BackColor = System.Drawing.Color.Transparent;
+            this.rxButtons1.Name = "rxButtons1";
+            this.rxButtons1.Load += new System.EventHandler(this.rxButtons1_Load);
+            // 
+            // JogForm
+            // 
+            resources.ApplyResources(this.JogForm, "JogForm");
+            this.JogForm.Name = "JogForm";
+            this.JogForm.Load += new System.EventHandler(this.JogForm_Load);
+            // 
+            // ConnectionForm
+            // 
+            resources.ApplyResources(this.ConnectionForm, "ConnectionForm");
+            this.ConnectionForm.Name = "ConnectionForm";
+            // 
             // MainForm
             // 
             this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.rxMenuBar1);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.StatusBar);
             this.Controls.Add(this.MMn);
@@ -1014,6 +1021,7 @@
         private ConnectLogForm ConnectionForm;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private RxButtons rxButtons1;
+        private RxMenuBar rxMenuBar1;
     }
 }
 

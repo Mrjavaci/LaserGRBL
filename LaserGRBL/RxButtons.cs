@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace LaserGRBL
@@ -11,6 +12,13 @@ namespace LaserGRBL
         {
             InitializeComponent();
         }
+
+        public void updateStatus(String MachineStatus)
+        {
+
+
+        }
+
 
         public void setCore(GrblCore core)
         {

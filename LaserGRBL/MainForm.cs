@@ -247,6 +247,10 @@ namespace LaserGRBL
 		private void TimerUpdate()
 		{
 			SuspendLayout();
+
+            rxButtons1.updateStatus("");
+
+
 			TTTStatus.Text = GrblCore.TranslateEnum(Core.MachineStatus);
 
 			if (Core.InProgram)
