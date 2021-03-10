@@ -8,6 +8,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Threading;
+using LaserGRBL.UserControls;
 
 namespace LaserGRBL
 {
@@ -150,6 +151,8 @@ namespace LaserGRBL
 
 			ManageMessage();
 			ManageCommandLineArgs(args);
+
+			setSplitterPos();
 		}
 
 		private void ManageCommandLineArgs(string[] args)
@@ -252,16 +255,28 @@ namespace LaserGRBL
 
 
 			TTTStatus.Text = GrblCore.TranslateEnum(Core.MachineStatus);
+			/*
+						if (Core.InProgram)
+							TTTEstimated.Text = Tools.Utils.TimeSpanToString(Core.ProjectedTime, Tools.Utils.TimePrecision.Second, Tools.Utils.TimePrecision.Second, " ,", true);
+						else
+							TTTEstimated.Text = Tools.Utils.TimeSpanToString(Core.LoadedFile.EstimatedTime, Tools.Utils.TimePrecision.Second, Tools.Utils.TimePrecision.Second, " ,", true);
 
-			if (Core.InProgram)
-				TTTEstimated.Text = Tools.Utils.TimeSpanToString(Core.ProjectedTime, Tools.Utils.TimePrecision.Second, Tools.Utils.TimePrecision.Second, " ,", true);
-			else
-				TTTEstimated.Text = Tools.Utils.TimeSpanToString(Core.LoadedFile.EstimatedTime, Tools.Utils.TimePrecision.Second, Tools.Utils.TimePrecision.Second, " ,", true);
+						if (Core.InProgram)
+							TTLEstimated.Text = Strings.MainFormProjectedTime;
+						else
+							TTLEstimated.Text = Strings.MainFormEstimatedTime;
+			*/
 
-			if (Core.InProgram)
-				TTLEstimated.Text = Strings.MainFormProjectedTime;
-			else
-				TTLEstimated.Text = Strings.MainFormEstimatedTime;
+            if (Core.InProgram)
+                rxMenuBarSecond1.valueOfTime = Strings.MainFormProjectedTime +  Tools.Utils.TimeSpanToString(Core.ProjectedTime, Tools.Utils.TimePrecision.Second, Tools.Utils.TimePrecision.Second, " ,", true);
+            else
+                rxMenuBarSecond1.valueOfTime = Strings.MainFormEstimatedTime + Tools.Utils.TimeSpanToString(Core.LoadedFile.EstimatedTime, Tools.Utils.TimePrecision.Second, Tools.Utils.TimePrecision.Second, " ,", true);
+/*
+            if (Core.InProgram)
+                rxMenuBarSecond1.valueOfTime = Strings.MainFormProjectedTime;
+            else
+                rxMenuBarSecond1.valueOfTime = Strings.MainFormEstimatedTime;
+*/
 
 			MnFileOpen.Enabled = Core.CanLoadNewFile;
 			MnAdvancedSave.Enabled = MnSaveProgram.Enabled = Core.HasProgram;
@@ -317,10 +332,17 @@ namespace LaserGRBL
 					break;
 			}
 
+			/*
 			PbBuffer.Maximum = Core.BufferSize;
 			PbBuffer.Value = Core.UsedBuffer;
 			PbBuffer.ToolTipText = $"Buffer: {Core.UsedBuffer}/{Core.BufferSize} Free:{Core.FreeBuffer}";
-			MnOrtur.Visible = Core.IsOrturBoard;
+			*/
+
+            TextProgressBar myBar = rxMenuBarSecond1.getBar();
+            myBar.Maximum = Core.BufferSize;
+            myBar.CustomText = "Buffer";
+            myBar.Value = Core.UsedBuffer;
+			rxMenuBarSecond1.setProgressBar(myBar);
 
 			ResumeLayout();
 		}
@@ -926,9 +948,11 @@ namespace LaserGRBL
         {
 
 
-	        int newPanel1Width = (this.Width - 290) ;
+	        int newPanel1Width = (this.Width - 310) ;
             if (newPanel1Width > 100)
             {
+
+                rxMenuBar1.Width = (newPanel1Width - 3);
 				splitContainer1.SplitterDistance = newPanel1Width;
 
                 saveSplitContainerSplitterPos();

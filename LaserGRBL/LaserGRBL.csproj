@@ -691,6 +691,12 @@
     <Compile Include="RxMenuBar.Designer.cs">
       <DependentUpon>RxMenuBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="RxMenuBarSecond.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RxMenuBarSecond.Designer.cs">
+      <DependentUpon>RxMenuBarSecond.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ColorProgressBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -712,6 +718,12 @@
     </Compile>
     <Compile Include="UserControls\CommandLog.Designer.cs">
       <DependentUpon>CommandLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TextProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\TextProgressBar.Designer.cs">
+      <DependentUpon>TextProgressBar.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\DoubleProgressBar.cs">
       <SubType>UserControl</SubType>
@@ -789,6 +801,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RxMenuBar.resx">
       <DependentUpon>RxMenuBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RxMenuBarSecond.resx">
+      <DependentUpon>RxMenuBarSecond.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WiFiDiscovery\DiscoveryForm.resx">
       <DependentUpon>DiscoveryForm.cs</DependentUpon>

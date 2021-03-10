@@ -125,8 +125,8 @@
   <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 51</value>
   </data>
-  <data name="PreviewForm.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="PreviewForm.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="PreviewForm.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt</value>
@@ -135,7 +135,7 @@
     <value>0, 0</value>
   </data>
   <data name="PreviewForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>661, 506</value>
+    <value>651, 506</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PreviewForm.TabIndex" type="System.Int32, mscorlib">
@@ -172,10 +172,10 @@
     <value>Left, Right</value>
   </data>
   <data name="rxButtons1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 159</value>
+    <value>3, 160</value>
   </data>
   <data name="rxButtons1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 237</value>
+    <value>223, 237</value>
   </data>
   <data name="rxButtons1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -199,7 +199,7 @@
     <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="JogForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 378</value>
+    <value>6, 378</value>
   </data>
   <data name="JogForm.Size" type="System.Drawing.Size, System.Drawing">
     <value>218, 128</value>
@@ -232,7 +232,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="ConnectionForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 165</value>
+    <value>223, 165</value>
   </data>
   <data name="ConnectionForm.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -265,7 +265,7 @@
     <value>884, 506</value>
   </data>
   <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
-    <value>661</value>
+    <value>651</value>
   </data>
   <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -280,7 +280,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="StatusBar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>194, 17</value>
@@ -307,7 +307,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;StatusBar.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="TTLLines.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 19</value>
@@ -436,7 +436,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MMn.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="MnGrbl.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 20</value>
@@ -1953,7 +1953,7 @@
     <value>0, 1</value>
   </data>
   <data name="rxMenuBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>883, 44</value>
+    <value>651, 44</value>
   </data>
   <data name="rxMenuBar1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1968,6 +1968,30 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;rxMenuBar1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rxMenuBarSecond1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="rxMenuBarSecond1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>592, 1</value>
+  </data>
+  <data name="rxMenuBarSecond1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 44</value>
+  </data>
+  <data name="rxMenuBarSecond1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;rxMenuBarSecond1.Name" xml:space="preserve">
+    <value>rxMenuBarSecond1</value>
+  </data>
+  <data name="&gt;&gt;rxMenuBarSecond1.Type" xml:space="preserve">
+    <value>LaserGRBL.RxMenuBarSecond, LaserGRBL, Version=4.2.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rxMenuBarSecond1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rxMenuBarSecond1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -2057,6 +2081,9 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgAAAD4AAAA/AAAAPwAAAD/AAAA//wAAP/+AAH//g
         AD//4AD//+AB///gAf//4AH///AD///wA/8=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>

@@ -136,6 +136,7 @@
             this.rxButtons1 = new LaserGRBL.RxButtons();
             this.JogForm = new LaserGRBL.JogForm();
             this.ConnectionForm = new LaserGRBL.ConnectLogForm();
+            this.rxMenuBarSecond1 = new LaserGRBL.RxMenuBarSecond();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -856,6 +857,7 @@
             // rxMenuBar1
             // 
             resources.ApplyResources(this.rxMenuBar1, "rxMenuBar1");
+            this.rxMenuBar1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.rxMenuBar1.Name = "rxMenuBar1";
             // 
             // PreviewForm
@@ -882,11 +884,18 @@
             resources.ApplyResources(this.ConnectionForm, "ConnectionForm");
             this.ConnectionForm.Name = "ConnectionForm";
             // 
+            // rxMenuBarSecond1
+            // 
+            resources.ApplyResources(this.rxMenuBarSecond1, "rxMenuBarSecond1");
+            this.rxMenuBarSecond1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.rxMenuBarSecond1.Name = "rxMenuBarSecond1";
+            // 
             // MainForm
             // 
             this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.rxMenuBarSecond1);
             this.Controls.Add(this.rxMenuBar1);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.StatusBar);
@@ -1022,6 +1031,7 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private RxButtons rxButtons1;
         private RxMenuBar rxMenuBar1;
+        private RxMenuBarSecond rxMenuBarSecond1;
     }
 }
 
